@@ -63,8 +63,8 @@ metadata:
   name: demo
 spec:
   ports:
-    - port: 8085
-      targetPort: 8081
+    - port: 80
+      targetPort: 8080
   selector:
     app: demo
   type: ClusterIP
@@ -75,8 +75,8 @@ metadata:
   name: demo-canary
 spec:
   ports:
-    - port: 8085
-      targetPort: 8081
+    - port: 80
+      targetPort: 8080
   selector:
     app: demo
   type: ClusterIP
